@@ -44,12 +44,14 @@ document.getElementById('jobForm').addEventListener('submit', function(event) {
         }),
     })
     .then(response => {
+        // Handle cases where the response might not be valid JSON
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            return response.text().then(text => { throw new Error(text); });
         }
-        return response.json();
+        // Return nothing as Discord webhook responses are often empty
+        return response.text(); 
     })
-    .then(data => {
+    .then(() => {
         // Hide the form and display the thank you message
         document.getElementById('jobForm').style.display = 'none';
         document.body.innerHTML += `
@@ -62,6 +64,6 @@ document.getElementById('jobForm').addEventListener('submit', function(event) {
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('There was an error submitting your application.');
+        alert(`There was an error submitting your application: ${error.message}`);
     });
 });
