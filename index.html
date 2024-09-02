@@ -3,136 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walmart - Part-Time Jobs</title>
+    <title>Walmart Company - Part-Time Jobs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Walmart</h1>
-            <p>Providing Quality Service Since 1962</p>
-        </div>
-    </header>
-
     <div class="container">
+        <h1>Walmart</h1>
         <h2>Part-Time Jobs</h2>
-        <form id="jobForm">
-            <div class="form-group">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
-            </div>
-
-            <div class="form-group">
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
-            </div>
-
-            <div class="form-group">
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
-                    <option value="">Select Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
-
-            <div class="form-group">
-                <label for="mobileNumber">Mobile Number:</label>
-                <input type="tel" id="mobileNumber" name="mobileNumber" required>
-            </div>
-
-            <div class="form-group">
-                <label for="altMobileNumber">Alternate Mobile Number:</label>
-                <input type="tel" id="altMobileNumber" name="altMobileNumber">
-            </div>
-
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="workLocation">Work Location:</label>
-                <select id="workLocation" name="workLocation" required>
-                    <option value="">Select Location</option>
-                    <option value="office">Office-Pune Cluster1</option>
-                    <option value="remote">Remote-WFH</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="hours">Hours:</label>
-                <select id="hours" name="hours" required>
-                    <option value="">Select Hours</option>
-                    <option value="3-4">3-4 hours</option>
-                    <option value="5-6">5-6 hours</option>
-                    <option value="8-9">8-9 hours</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="daysWorking">Days Working:</label>
-                <select id="daysWorking" name="daysWorking" required>
-                    <option value="">Select Days</option>
-                    <option value="5">5 weekdays</option>
-                    <option value="2">2 days (Sat & Sun)</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="currentSalary">Current Last Month's Drawn Salary:</label>
-                <input type="text" id="currentSalary" name="currentSalary" required>
-            </div>
-
-            <div class="form-group">
-                <label for="expectedSalary">Expected Salary Per Month (Full-Time):</label>
-                <input type="text" id="expectedSalary" name="expectedSalary" required>
-            </div>
-            <div class="form-group">
-                <label for="coverLetter">Cover Letter:</label>
-                <textarea id="coverLetter" name="coverLetter" rows="6" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label>
-                    <input type="checkbox" id="ownLaptop" name="ownLaptop">
-                    Do you have your own laptop?
-                </label>
-            </div>
-
-            <div class="form-group">
-                <label>
-                    <input type="checkbox" id="terms" name="terms" required>
-                    I agree with the terms and conditions of Walmart company policies
-                </label>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Walmart Inc. All rights reserved.</p>
-            <p>Contact us: <a href="mailto:careers@walmart.com">careers@walmart.com</a></p>
-            <p>Visit our website: <a href="https://www.walmart.com">www.walmart.com</a></p>
-            <p>©2024 Walmart, Inc. is an Equal Opportunity Employer- By Choice.
-
-                We believe we are best equipped to help our associates, customers, and the communities we serve live better when we really know them. That means understanding, respecting, and valuing diversity- unique styles, experiences, identities, abilities, ideas and opinions- while being inclusive of all people. Walmart Inc. participates in E-Verify. Learn more about applicant rights under Federal Employment Laws.</p>
+        <div id="applicationClosedMessage" style="text-align: center; margin-top: 50px;">
+            <h2>Applications Closed</h2>
+            <p>We are no longer accepting applications for part-time jobs at Walmart. Thank you for your interest.</p>
+            <p>Best regards,<br>Walmart Team<br>Email: <a href="mailto:hr@walmart.com">hr@walmart.com</a></p>
         </div>
-    </footer>
-    
-    <script src="scripts.js"></script>
+    </div>
 </body>
 </html>
